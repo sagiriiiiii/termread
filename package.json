@@ -1,0 +1,39 @@
+{
+  "name": "termread",
+  "version": "1.0.0",
+  "description": "Read any URL in your terminal — powered by Jina AI reader",
+  "main": "index.js",
+  "bin": {
+    "termread": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [
+    "cli",
+    "reader",
+    "terminal",
+    "jina",
+    "markdown",
+    "web",
+    "browser"
+  ],
+  "author": "sagiriiiiii",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagiriiiiii/termread.git"
+  },
+  "homepage": "https://github.com/sagiriiiiii/termread#readme",
+  "bugs": {
+    "url": "https://github.com/sagiriiiiii/termread/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "jimp": "^1.6.1",
+    "marked": "^15.0.0"
+  }
+}
