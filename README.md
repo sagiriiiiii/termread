@@ -23,23 +23,9 @@ npx termread <url>
 ## Features
 
 - Strips ads, nav bars, and clutter — shows only the content
-- Renders Markdown formatting in your terminal (headings, bold, bullets)
-- Detects and displays images via [chafa](https://hpjansson.org/chafa/) if installed
-- Works with X/Twitter threads, GitHub issues, blog posts, documentation, and more
-
-## Image rendering
-
-Install `chafa` to render images as colored ASCII art:
-
-```bash
-# macOS
-brew install chafa
-
-# Ubuntu / Debian
-sudo apt install chafa
-```
-
-Without chafa, image URLs are shown as dimmed text fallbacks.
+- Renders Markdown with visual hierarchy: headings, bold, bullets, code blocks
+- Displays images as colored pixel art directly in the terminal — no external tools required
+- Works with X/Twitter threads, blog posts, GitHub issues, documentation, and more
 
 ## Usage
 
@@ -50,7 +36,11 @@ termread --help
 
 ## How it works
 
-`termread` passes your URL through `https://r.jina.ai/<url>`, which strips page chrome and returns clean Markdown. The result is rendered in your terminal using [marked-terminal](https://github.com/mikaelbr/marked-terminal).
+`termread` passes your URL through `https://r.jina.ai/<url>`, which strips page chrome and returns clean Markdown. The Markdown is rendered with a custom terminal renderer, and images are decoded and drawn as 24-bit color half-block characters using [jimp](https://github.com/jimp-dev/jimp).
+
+## Requirements
+
+Node.js 18 or later.
 
 ## License
 
