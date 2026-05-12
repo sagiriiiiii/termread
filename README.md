@@ -6,7 +6,7 @@ Read any URL in your terminal. Powered by [Jina AI Reader](https://r.jina.ai).
 termread https://x.com/akshay_pachaar/status/2041146899319971922
 ```
 
-![demo](https://github.com/sagiriiiiii/termread/raw/main/demo.gif)
+![demo](https://github.com/sagiriiiiii/termread/raw/main/demo.png)
 
 ## Install
 

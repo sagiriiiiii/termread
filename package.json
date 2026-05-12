@@ -1,6 +1,6 @@
 {
   "name": "termread",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read any URL in your terminal — powered by Jina AI reader",
   "main": "index.js",
   "bin": {
